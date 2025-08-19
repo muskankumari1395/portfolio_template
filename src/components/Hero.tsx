@@ -59,7 +59,7 @@ const HeroSection = () => {
       <div className="floating-orb-3 absolute top-1/2 left-1/2 w-32 h-32 bg-primary-glow/10 rounded-full blur-xl" />
 
       {/* Spline 3D Model */}
-      <div className="spline-hero absolute top-0 right-0 w-full md:w-3/5 h-full opacity-0 hidden md:block">
+      <div className="spline-hero absolute top-0 right-0 w-full md:w-3/5 h-full opacity-0 block">
         <iframe
           src="https://my.spline.design/genkubgreetingrobot-0vxfBgqLk4q22te7iiHMrR93/"
           frameBorder="0"
