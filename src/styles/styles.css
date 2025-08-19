@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme background and special effects not easily expressed with utilities */
+html, body, #root { height: 100%; }
+body{
+  background:
+    radial-gradient(1200px 800px at 70% -10%, #23265a44, transparent),
+    radial-gradient(1000px 700px at -10% 20%, #5628ff22, transparent),
+    theme('colors.bg');
+  color: theme('colors.text');
+}
+
+/********************
+  Custom component classes
+********************/
+@layer components {
+  .glass {
+    @apply bg-white/5 border border-white/10 backdrop-blur-glass rounded-xl;
+  }
+  .btn-primary {
+    @apply inline-block font-extrabold text-[#0b0e2b] rounded-xl px-5 py-3 transition transform;
+    background: linear-gradient(90deg, theme('colors.primary'), theme('colors.accent'));
+    box-shadow: 0 10px 24px #6e76ff33, 0 0 0 0 #6e76ff66;
+  }
+  .btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 12px 28px #6e76ff55, 0 0 34px #6e76ff88; }
+
+  .glow-orb { filter: blur(40px); opacity:.45; mix-blend-mode: screen; }
+
+  .preloader-bg { background: linear-gradient(135deg,#0b0e2b,#0b0e2b 60%,#141a42); }
+}
