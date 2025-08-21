@@ -114,7 +114,7 @@ const AboutSection = () => {
               <div className="absolute -inset-3 sm:-inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-lg sm:blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/30 group-hover:border-primary/50 transition-all duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616c2e5aece?w=400&h=400&fit=crop&crop=face&auto=format&q=80" 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&q=80" 
                   alt="Developer Profile" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
